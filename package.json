@@ -9,6 +9,7 @@
     "lint": "next lint",
     "eslint": "eslint .",
     "stylelint": "stylelint **/*.scss",
+    "prettier": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Airon Clarke",
@@ -28,8 +29,10 @@
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.9.0",
+    "prettier": "3.3.3",
     "stylelint": "^16.9.0",
     "stylelint-config-standard-scss": "^13.1.0",
     "typescript": "5.5.4",
