@@ -19,9 +19,13 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json'
   },
-  plugins: ['@typescript-eslint', 'react'],
+  plugins: ['@typescript-eslint', 'react', 'simple-import-sort'],
   rules: {
+    quotes: ['error', 'single'],
+    'max-lines': ['error', 80],
     'react/jsx-props-no-spreading': 'off',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
     '@typescript-eslint/comma-dangle': 'off',
     'object-curly-newline': [
       'error',
