@@ -10,7 +10,8 @@
     "eslint": "eslint .",
     "stylelint": "stylelint **/*.scss",
     "prettier": "prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "author": "Airon Clarke",
   "license": "MIT",
@@ -33,6 +34,8 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^15.9.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
     "postcss": "^8.4.42",
     "prettier": "3.3.3",
     "stylelint": "^16.9.0",
@@ -40,5 +43,12 @@
     "stylelint-config-standard-scss": "^13.1.0",
     "typescript": "5.5.4",
     "typescript-eslint": "^8.3.0"
+  },
+  "lint-staged": {
+    "*": "prettuer --write",
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.scss": "stylelint --fix"
   }
 }
