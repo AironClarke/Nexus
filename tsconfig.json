@@ -23,7 +23,8 @@
     "**/*.jsx",
     "**/*.tsx",
     ".eslintrc.js",
-    ".prettierignore"
+    ".prettierignore",
+    "pages/_documenttjsx"
   ],
   "exclude": ["node_modules"]
 }
