@@ -2,12 +2,14 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es2021: true
+    es2021: true,
+    jest: true
   },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
+    'plugin:jest/recommended',
     'airbnb',
     'airbnb-typescript',
     'Prettier'
@@ -19,7 +21,8 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json'
   },
-  plugins: ['@typescript-eslint', 'react', 'simple-import-sort'],
+  plugins: ['@typescript-eslint', 'jest', 'react', 'simple-import-sort'],
+  ignorePatterns: ['*.config.js'],
   rules: {
     quotes: ['error', 'single'],
     'max-lines': ['error', 80],
