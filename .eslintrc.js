@@ -11,7 +11,9 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jest/recommended',
     'airbnb',
+    'airbnb/hooks',
     'airbnb-typescript',
+    'plugin:import/typescript',
     'Prettier'
   ],
   globals: { React: 'readonly' },
@@ -21,9 +23,19 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json'
   },
-  plugins: ['@typescript-eslint', 'jest', 'react', 'simple-import-sort'],
+  plugins: [
+    '@typescript-eslint',
+    'jest',
+    'react',
+    'simple-import-sort',
+    'testing-library'
+  ],
   ignorePatterns: ['*.config.js'],
   rules: {
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      { prefer: 'type-imports' }
+    ],
     quotes: ['error', 'single'],
     'max-lines': ['error', 80],
     'react/jsx-props-no-spreading': 'off',
@@ -37,6 +49,13 @@ module.exports = {
         ObjectPattern: { multiline: true, minProperties: 5 },
         ImportDeclaration: { multiline: true, minProperties: 5 },
         ExportDeclaration: { multiline: true, minProperties: 5 }
+      }
+    ],
+    'array-bracket-newline': [
+      'error',
+      {
+        multiline: true,
+        minItems: 5
       }
     ]
   }
