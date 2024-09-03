@@ -1,6 +1,6 @@
-import HelloWorld from 'app/HelloWorld';
 import type { ReactElement } from 'react';
+import processDir from 'utils/processDir';
 
 export default function Home(): ReactElement {
-  return <HelloWorld />;
+  return <processDir.HelloWorld.Component />;
 }
