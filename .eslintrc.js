@@ -14,6 +14,8 @@ module.exports = {
     'airbnb/hooks',
     'airbnb-typescript',
     'plugin:import/typescript',
+    'plugin:testing-library/react',
+    'plugin:jest-dom/recommended',
     'Prettier'
   ],
   globals: { React: 'readonly' },
@@ -28,7 +30,8 @@ module.exports = {
     'jest',
     'react',
     'simple-import-sort',
-    'testing-library'
+    'testing-library',
+    'jest-dom'
   ],
   ignorePatterns: ['*.config.js'],
   rules: {
