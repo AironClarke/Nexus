@@ -45,15 +45,6 @@ module.exports = {
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
     '@typescript-eslint/comma-dangle': 'off',
-    'object-curly-newline': [
-      'error',
-      {
-        ObjectExpression: { multiline: true, minProperties: 5 },
-        ObjectPattern: { multiline: true, minProperties: 5 },
-        ImportDeclaration: { multiline: true, minProperties: 5 },
-        ExportDeclaration: { multiline: true, minProperties: 5 }
-      }
-    ],
     'array-bracket-newline': [
       'error',
       {
@@ -61,6 +52,7 @@ module.exports = {
         minItems: 5
       }
     ],
-    'react/function-component-definition': 'off'
+    'react/function-component-definition': 'off',
+    'max-len': ['error', { code: 80 }]
   }
 };

@@ -29,7 +29,7 @@
     "**/*.tsx",
     ".eslintrc.js",
     ".prettierignore",
-    "pages/_documenttjsx",
+    "pages/_document.jsx",
     ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
