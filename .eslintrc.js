@@ -60,6 +60,7 @@ module.exports = {
         multiline: true,
         minItems: 5
       }
-    ]
+    ],
+    'react/function-component-definition': 'off'
   }
 };
