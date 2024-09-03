@@ -5,9 +5,9 @@ import packageInfo from 'package.json';
 import { ThemeProvider } from 'styled-components';
 import defaultTheme from 'themes/default.json';
 
-export default function App({ Component, pageProps }: AppProps) {
-  const { name, description } = packageInfo;
+const { name, description } = packageInfo;
 
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
