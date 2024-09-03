@@ -45,6 +45,7 @@
     "husky": "^9.1.5",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "jest-next-dynamic": "^1.0.1",
     "lint-staged": "^15.2.10",
     "postcss": "^8.4.42",
     "postcss-styled-syntax": "^0.6.4",
