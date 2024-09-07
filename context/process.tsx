@@ -6,12 +6,8 @@ import {
   useMemo,
   useState
 } from 'react';
-import type { Processes } from 'types/utils/processDir';
+import type { ProcessContextState } from 'types/context/process';
 import processDir from 'utils/processDir';
-
-type ProcessContextState = {
-  processes: Processes;
-};
 
 export const ProcessContext = createContext<ProcessContextState>({
   processes: {}
