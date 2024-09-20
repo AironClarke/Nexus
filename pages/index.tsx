@@ -1,11 +1,11 @@
 import { ProcessProvider } from 'context/process';
-import WindowManager from 'context/system/WindowManager';
+import ProcessLoader from 'context/system/ProcessLoader';
 import type { ReactElement } from 'react';
 
 export default function Home(): ReactElement {
   return (
     <ProcessProvider>
-      <WindowManager />
+      <ProcessLoader />
     </ProcessProvider>
   );
 }
