@@ -3,7 +3,8 @@ import type { Processes } from 'types/context/process';
 
 const processDir: Processes = {
   HelloWorld: {
-    Component: dynamic(() => import('components/apps/HelloWorld'))
+    Component: dynamic(() => import('components/apps/HelloWorld')),
+    hasWindow: true
   }
 };
 
