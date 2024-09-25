@@ -1,17 +1,26 @@
-import MetaData from 'components/Metadata';
+import Metadata from 'components/pages/Metadata';
+import { SessionContext, SessionProvider } from 'context/session';
 import type { AppProps } from 'next/app';
+import type { ReactElement } from 'react';
+import { useContext } from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from 'styles/GlobalStyles';
-import defaultTheme from 'styles/themes.json';
+import themes from 'styles/themes.json';
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps): ReactElement {
+  const session = useContext(SessionContext);
+
   return (
     <>
-      <MetaData />
-      <ThemeProvider theme={defaultTheme}>
-        <GlobalStyle />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <Metadata />
+      <SessionProvider>
+        <>
+          <GlobalStyle />
+          <ThemeProvider theme={session?.theme || themes.default}>
+            <Component {...pageProps} />
+          </ThemeProvider>
+        </>
+      </SessionProvider>
     </>
   );
 }
