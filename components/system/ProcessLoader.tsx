@@ -1,8 +1,9 @@
 import { ProcessContext } from 'context/process';
+import dynamic from 'next/dynamic';
 import type { FC } from 'react'; // Import FC
 import React, { useContext } from 'react';
 
-import Window from './Window';
+const Window = dynamic(() => import('components/system/Window'));
 
 const ProcessLoader: FC = () => {
   const { processes } = useContext(ProcessContext);
