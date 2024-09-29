@@ -1,16 +1,21 @@
 // eslint-disable-next-line max-len
 import useProcessContextState from 'hooks/useProcessContextState';
-import { createContext, type FC, type PropsWithChildren } from 'react';
-import type { ProcessContextState } from 'types/context/process';
+import { createContext, type FC } from 'react';
+import type {
+  ProcessContextState,
+  ProcessProviderProps
+} from 'types/context/process';
 import { initalProcessContextState } from 'utils/initalContextStates';
-import processDir from 'utils/processDir';
 
 export const ProcessContext = createContext<ProcessContextState>(
   initalProcessContextState
 );
 
-export const ProcessProvider: FC<PropsWithChildren> = ({ children }) => (
-  <ProcessContext.Provider value={useProcessContextState(processDir)}>
+export const ProcessProvider: FC<ProcessProviderProps> = ({
+  children,
+  startupProcesses
+}) => (
+  <ProcessContext.Provider value={useProcessContextState(startupProcesses)}>
     {children}
   </ProcessContext.Provider>
 );
