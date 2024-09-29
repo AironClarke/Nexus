@@ -1,6 +1,5 @@
 import type { DocumentContext, DocumentInitialProps } from 'next/document';
-import Document, { Head, Html, Main, NextScript } from 'next/document';
-import type { ReactElement } from 'react';
+import Document from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
@@ -25,18 +24,6 @@ class MyDocument extends Document {
     } finally {
       sheet.seal();
     }
-  }
-
-  render(): ReactElement {
-    return (
-      <Html lang="en">
-        <Head />
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
   }
 }
 

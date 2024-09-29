@@ -1,4 +1,3 @@
-// eslint-disable-next-line max-len
 import useProcessContextState from 'hooks/useProcessContextState';
 import { createContext, type FC } from 'react';
 import type {
