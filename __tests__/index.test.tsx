@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Home from 'pages/index';
 import { ThemeProvider } from 'styled-components';
-import defaultTheme from 'styles/themes.json';
+import defaultTheme from 'styles/themes';
 
 test('renders index page', () => {
   render(

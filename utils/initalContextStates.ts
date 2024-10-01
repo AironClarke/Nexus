@@ -1,12 +1,11 @@
-export const initalProcessContextState = {
+import type { ProcessContextState } from 'types/context/process';
+import type { SessionContextState } from 'types/context/session';
+
+export const initialProcessContextState: ProcessContextState = {
   processes: {}
 };
 
-export const initalSessionContextState = {
-  theme: {
-    colors: {
-      primary: '',
-      window: ''
-    }
-  }
+export const initialSessionContextState: SessionContextState = {
+  themeName: '',
+  setThemeName: () => undefined
 };

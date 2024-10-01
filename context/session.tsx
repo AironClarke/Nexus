@@ -1,11 +1,10 @@
 import useSessionContextState from 'hooks/useSessionContextState';
 import { createContext, type FC, type PropsWithChildren } from 'react';
 import type { SessionContextState } from 'types/context/session';
-import { initalSessionContextState } from 'utils/initalContextStates';
-// import themes from 'styles/themes.json'
+import { initialSessionContextState } from 'utils/initalContextStates';
 
 export const SessionContext = createContext<SessionContextState>(
-  initalSessionContextState
+  initialSessionContextState
 );
 
 export const SessionProvider: FC<PropsWithChildren> = ({ children }) => (

@@ -4,10 +4,10 @@ import type {
   ProcessContextState,
   ProcessProviderProps
 } from 'types/context/process';
-import { initalProcessContextState } from 'utils/initalContextStates';
+import { initialProcessContextState } from 'utils/initalContextStates';
 
 export const ProcessContext = createContext<ProcessContextState>(
-  initalProcessContextState
+  initialProcessContextState
 );
 
 export const ProcessProvider: FC<ProcessProviderProps> = ({

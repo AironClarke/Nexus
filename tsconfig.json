@@ -30,7 +30,8 @@
     ".eslintrc.js",
     ".prettierignore",
     "pages/_document.jsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "libs/vanta.waves.min.js"
   ],
   "exclude": ["node_modules"]
 }

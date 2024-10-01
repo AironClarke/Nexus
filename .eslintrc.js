@@ -33,7 +33,7 @@ module.exports = {
     'testing-library',
     'jest-dom'
   ],
-  ignorePatterns: ['*.config.js', 'next.config.mjs'],
+  ignorePatterns: ['*.config.js', 'next.config.mjs', 'libs'],
   rules: {
     '@typescript-eslint/consistent-type-imports': [
       'error',
