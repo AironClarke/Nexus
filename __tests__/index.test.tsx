@@ -1,13 +1,12 @@
 import { render, screen } from '@testing-library/react';
-import Home from 'pages/index';
-import { ThemeProvider } from 'styled-components';
-import defaultTheme from 'styles/themes';
+import StyledApp from 'components/pages/StyledApp';
+import Index from 'pages/index';
 
 test('renders index page', () => {
   render(
-    <ThemeProvider theme={defaultTheme}>
-      <Home />
-    </ThemeProvider>
+    <StyledApp>
+      <Index />
+    </StyledApp>
   );
 
   expect(screen.getByText('Hello, world!')).toBeInTheDocument();

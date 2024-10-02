@@ -1,7 +1,7 @@
-import type { ComponentType, ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 export type Process = {
-  Component: ComponentType;
+  Component: React.ComponentType;
   hasWindow: boolean;
 };
 
