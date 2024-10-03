@@ -8,6 +8,9 @@ const GlobalStyle = createGlobalStyle`
     outline: 0;
     padding: 0;
   }
+  ol {
+    list-style: none ;
+  }
 `;
 
 export default GlobalStyle;
