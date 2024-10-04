@@ -1,23 +1,35 @@
 import * as THREE from 'three';
-import type { WallpaperEffect } from 'types/styles/wallpaper';
+import type {
+  VantaWavesSettings,
+  WallpaperEffect
+} from 'types/styles/wallpaper';
 // @ts-expect-error no decleration needed
 import WAVES from 'vanta/dist/vanta.waves.min';
 
-const vantaWaves: WallpaperEffect = (
-  desktopRef: React.RefObject<HTMLElement>
-) => {
-  if (!desktopRef.current) {
-    return () => {}; /* NULL */
-  }
-
-  const vantaEffect = WAVES({
-    el: desktopRef.current,
-    THREE
-  });
-
-  return () => {
-    vantaEffect?.destroy?.();
-  };
+const disableControls = {
+  mouseControls: false,
+  touchControls: false
 };
+
+const isWebGLAvaliable = typeof WebGLRenderingContext === 'undefined';
+
+const vantaWaves =
+  (settings: VantaWavesSettings): WallpaperEffect =>
+  (el) =>
+  () => {
+    const vantaEffect =
+      el && isWebGLAvaliable
+        ? WAVES({
+            el,
+            THREE,
+            ...disableControls,
+            ...settings
+          })
+        : undefined;
+
+    return () => {
+      vantaEffect?.destroy?.();
+    };
+  };
 
 export default vantaWaves;
