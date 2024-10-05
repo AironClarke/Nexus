@@ -21,7 +21,7 @@ const sizes = {
   },
   taskbar: {
     entry: {
-      width: '80px'
+      maxWidth: '160px'
     },
     height: '30px'
   }
