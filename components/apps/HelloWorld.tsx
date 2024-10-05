@@ -1,5 +1,3 @@
-import type { FC } from 'react';
-
-const HelloWorld: FC = () => <h1>Hello, world!</h1>;
+const HelloWorld = (): JSX.Element => <h1>Hello, world!</h1>;
 
 export default HelloWorld;

@@ -6,13 +6,11 @@ import type { ReactElement } from 'react';
 
 export default function App({ Component, pageProps }: AppProps): ReactElement {
   return (
-    <>
-      <Metadata />
-      <SessionProvider>
-        <StyledApp>
-          <Component {...pageProps} />
-        </StyledApp>
-      </SessionProvider>
-    </>
+    <SessionProvider>
+      <StyledApp>
+        <Metadata />
+        <Component {...pageProps} />
+      </StyledApp>
+    </SessionProvider>
   );
 }
