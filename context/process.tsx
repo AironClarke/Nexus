@@ -10,11 +10,8 @@ export const ProcessContext = createContext<ProcessContextState>(
   initialProcessContextState
 );
 
-export const ProcessProvider: FC<ProcessProviderProps> = ({
-  children,
-  startupProcesses
-}) => (
-  <ProcessContext.Provider value={useProcessContextState(startupProcesses)}>
+export const ProcessProvider: FC<ProcessProviderProps> = ({ children }) => (
+  <ProcessContext.Provider value={useProcessContextState()}>
     {children}
   </ProcessContext.Provider>
 );
