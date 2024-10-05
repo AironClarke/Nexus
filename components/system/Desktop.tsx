@@ -8,7 +8,7 @@ const Desktop: FC<DesktopProps> = ({ children }) => {
 
   useWallpaper(desktopRef);
 
-  return <StyledDesktop>{children}</StyledDesktop>;
+  return <StyledDesktop role="main">{children}</StyledDesktop>;
 };
 
 export default Desktop;
