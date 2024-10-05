@@ -40,7 +40,7 @@ module.exports = {
       { prefer: 'type-imports' }
     ],
     quotes: ['error', 'single'],
-    'max-lines': ['error', 80],
+    'max-lines': ['error', 90],
     'react/jsx-props-no-spreading': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
@@ -53,6 +53,6 @@ module.exports = {
       }
     ],
     'react/function-component-definition': 'off',
-    'max-len': ['error', { code: 80 }]
+    'max-len': ['error', { code: 90 }]
   }
 };

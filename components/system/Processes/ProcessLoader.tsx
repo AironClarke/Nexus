@@ -1,6 +1,7 @@
-import RenderProcess from 'components/system/RenderProcess';
 import { ProcessContext } from 'context/process';
 import { type FC, useContext } from 'react';
+
+import RenderProcess from './RenderProcess';
 
 const ProcessLoader: FC = () => {
   const { processes } = useContext(ProcessContext);

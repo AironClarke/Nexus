@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import StyledTaskbarEntries from 'styles/components/StyledTaskbarEntries';
+import StyledTaskbarEntries from 'styles/components/system/Taskbar/StyledTaskbarEntries';
 
 import TaskbarEntry from './TaskbarEntry';
 

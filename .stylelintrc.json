@@ -6,7 +6,6 @@
   ],
   "customSyntax": "postcss-styled-syntax",
   "rules": {
-    "scss/operator-no-unspaced": null,
-    "value-keyword-case": null
+    "scss/operator-no-unspaced": null
   }
 }
