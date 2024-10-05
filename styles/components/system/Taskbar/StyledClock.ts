@@ -15,5 +15,6 @@ const StyledClock = styled.time`
   display: flex;
   place-content: center;
   place-items: center;
+  font-size: ${({ theme }) => theme.fonts.clock.size};
 `;
 export default StyledClock;
