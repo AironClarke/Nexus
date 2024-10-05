@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-const StyledStartButton = styled.button`
+const StyledStartButton = styled.button.attrs({
+  type: 'button'
+})`
   background-color: red;
   height: 100%;
   width: ${({ theme }) => theme.sizes.startButton.width};

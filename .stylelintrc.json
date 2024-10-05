@@ -2,10 +2,7 @@
   "extends": [
     "stylelint-config-standard-scss",
     "stylelint-config-sass-guidelines",
-    "stylelint-config-standard"
+    "stylelint-config-recommended"
   ],
-  "customSyntax": "postcss-styled-syntax",
-  "rules": {
-    "scss/operator-no-unspaced": null
-  }
+  "customSyntax": "postcss-styled-syntax"
 }
