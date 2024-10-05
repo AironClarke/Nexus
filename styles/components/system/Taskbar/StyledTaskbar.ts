@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledTaskbar = styled.nav`
   background-color: orange;
-  height: 30px;
+  height: ${({ theme }) => theme.sizes.taskbar.height};
   width: 100vw;
   position: fixed;
   bottom: 0;

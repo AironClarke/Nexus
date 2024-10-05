@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledClock = styled.time`
   background-color: green;
   height: 100%;
-  width: 110px;
+  width: ${({ theme }) => theme.sizes.clock.width};
   position: absolute;
   right: 0;
 `;

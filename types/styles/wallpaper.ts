@@ -6,4 +6,4 @@ export type VantaWavesSettings = {
   zoom: number;
 };
 
-export type WallpaperEffect = (el: HTMLElement | null) => () => void;
+export type WallpaperEffect = (element: HTMLElement | null) => () => void;

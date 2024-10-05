@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledStartButton = styled.button`
   background-color: red;
   height: 100%;
-  width: 30px;
+  width: ${({ theme }) => theme.sizes.startButton.width};
   position: absolute;
   left: 0;
 `;
