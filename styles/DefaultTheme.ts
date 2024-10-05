@@ -1,7 +1,7 @@
 import vantaWaves from 'utils/vantaWaves';
 
 const colors = {
-  background: '#000',
+  background: 'blue',
   primary: '#000',
   window: '#808080'
 };
