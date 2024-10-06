@@ -11,6 +11,8 @@ const StyledStartButton = styled.button.attrs({
   display: flex;
   place-content: center;
   place-items: center;
+  color: ${({ theme }) => theme.colors.startButton};
+  font-size: ${({ theme }) => theme.sizes.startButton.iconSize};
 `;
 
 export default StyledStartButton;

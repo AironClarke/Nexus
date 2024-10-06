@@ -11,6 +11,15 @@ const GlobalStyle = createGlobalStyle`
   ol {
     list-style: none ;
   }
+
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  button {
+    background-color: unset;
+  }
 `;
 
 export default GlobalStyle;
