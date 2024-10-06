@@ -51,6 +51,6 @@ const wallpaper = vantaWaves({
   zoom: 0.9
 });
 
-const defaultTheme: DefaultTheme = { colors, sizes, formats, wallpaper, fonts };
+const defaultTheme: DefaultTheme = { colors, formats, sizes, wallpaper };
 
 export default defaultTheme;
