@@ -10,7 +10,10 @@ const colors = {
   window: '#808080'
 };
 
-const formats = {
+const formats: {
+  date: Intl.DateTimeFormatOptions;
+  time: Intl.DateTimeFormatOptions;
+} = {
   date: {
     weekday: 'long',
     month: 'long',
