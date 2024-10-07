@@ -2,7 +2,7 @@ import type { DefaultTheme } from 'styled-components/dist/types';
 import vantaWaves from 'utils/vantaWaves';
 
 const colors = {
-  background: '#000',
+  background: 'blue',
   clockText: 'rgba(255, 255, 255, 80%)',
   primary: '#000',
   startButton: '#FFF',
