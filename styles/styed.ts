@@ -6,7 +6,8 @@ declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
       background: string;
-      clockText: string;
+      highlight: string;
+      offWhite: string;
       primary: string;
       startButton: string;
       taskbar: string;
@@ -28,6 +29,12 @@ declare module 'styled-components' {
       taskbar: {
         blur: string;
         entry: {
+          borderSize: string;
+          fontSize: string;
+          icon: {
+            margin: string;
+            size: string;
+          };
           maxWidth: string;
         };
         height: string;

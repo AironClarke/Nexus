@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     outline: 0;
     padding: 0;
   }
-  ol {
+  ol, ul {
     list-style: none ;
   }
 
