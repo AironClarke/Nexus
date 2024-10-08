@@ -4,7 +4,7 @@ import { useCallback, useState } from 'react';
 import StyledClock from 'styles/components/system/Taskbar/StyledClock';
 
 const Clock = (): JSX.Element => {
-  const [now, setNow] = useState(new Date());
+  const [now, setNow] = useState<Date>(new Date());
   const { date, time, dateTime } = useLocaleDateTime(now);
   const updateClock = useCallback(() => setNow(new Date()), []);
 
