@@ -17,5 +17,9 @@ const StyledClock = styled.time`
   place-items: center;
   font-size: ${({ theme }) => theme.sizes.clock.fontSize};
   color: ${({ theme }) => theme.colors.offWhite};
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.taskbarHover};
+  }
 `;
 export default StyledClock;

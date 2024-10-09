@@ -13,6 +13,14 @@ const StyledStartButton = styled.button.attrs({
   place-items: center;
   color: ${({ theme }) => theme.colors.startButton};
   font-size: ${({ theme }) => theme.sizes.startButton.iconSize};
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.taskbarHover};
+
+    svg {
+      color: ${({ theme }) => theme.colors.highlight};
+    }
+  }
 `;
 
 export default StyledStartButton;
